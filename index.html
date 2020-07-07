@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My first PWA"/>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="css/materialize.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Submission 1 PWA</title>
+</head>
+<body>
+    
+    <!-- Navigation & Landing Page -->
+    <header>
+        <nav class="nav-wrapper grey darken-3">
+        <div class="container">
+            <a href="#" class="brand-logo">Doodle</a>
+            <a class="sidenav-trigger" data-target="nav-mobile">
+                <i class="material-icons menu">menu</i>
+            </a>
+            <ul class="top-nav right hide-on-med-and-down">
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#whatIdo">What I Do</a></li>
+                <li><a href="#myworks">My Works</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
+            </ul>
+    
+            <ul class="sidenav grey darken-3" id="nav-mobile">
+                <li>
+                    <!-- <a href="#" class="material-icons white-text left">label_important</a> -->
+                    <a class="white-text sidenav-link" href="#aboutme">About Me</a>
+                </li>
+                <li>
+                    <!-- <a href="#" class="material-icons white-text left">label_important</a> -->
+                    <a class="white-text sidenav-link" href="#whatIdo">What I Do</a>
+                </li>
+                <li>
+                    <!-- <a href="#" class="material-icons white-text left">label_important</a> -->
+                    <a class="white-text sidenav-link" href="#myworks">My Works</a>
+                </li>
+                <li>
+                    <!-- <a href="#" class="material-icons white-text left">label_important</a> -->
+                    <a class="white-text sidenav-link" href="#contactme">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+
+        <div class="main-bg"></div>
+
+        <div class="landing-page" id="landing-page">
+            <h1>Web Enthusiasts</h1>
+            <h2>Learn, Code, Build ~</h2>
+        </div>
+
+        <div class="block one grey darken-3"></div>
+        <div class="block two grey darken-3"></div>
+
+        <!-- <h1 class="watermark">Doodle</h1> -->
+    </header>
+
+    <!-- About me -->
+    <section class="scrollspy grey darken-3 aboutme" id="aboutme">
+        <div class="center-align container white-text">
+            <h4>Hi there, I'm Gennardo, call me Dodo.</h4>
+            <p>It has only been 2 years since I learn Web Development. I was hooked and my eyes gleam with happiness when I first render a simple Hello World text on my browser. That unforgettable memory is what triggered my interest in becoming web developer. I am excited to collaborate and help you build a beautiful website.</p>
+        </div>
+    </section>
+
+    <!-- <div class="absolute-div-1"></div>
+    <div class="absolute-div-2"></div>
+    <div class="absolute-div-3"></div> -->
+
+    <!-- What I Do -->
+    <section class="container section scrollspy white whatIdo z-depth-3" id="whatIdo">
+        <div class="row">
+          <div class="col s12 l5">
+            <h2 class="indigo-text text-darken-4">What I do...</h2>
+            <img src="./images/07.png" class="responsive-img" alt="">
+          </div>
+    
+          <div class="col s12 l6 offset-l1">
+            <ul class="tabs">
+              <li class="tab col s4">
+                <a href="#frontend" class="indigo-text text-darken-4">Front-end</a>
+              </li>
+              <li class="tab col s4">
+                <a href="#design" class="indigo-text text-darken-4">Design</a>
+              </li>
+              <li class="tab col s4">
+                <a href="#backend" class="indigo-text text-darken-4">Back-end</a>
+              </li>
+            </ul>
+    
+            <div class="tab-detail col s12" id="frontend">
+              <p class="detail flow-text indigo-text text-darken-4">FRONT-END</p>
+              <p>Front-end development is what I have spent my time most at.</p>
+              <p>Languages: HTML, CSS, Javascript, Sass</p>
+              <p>Tools: Bootstrap, Material-UI, Tailwind, Materialize, JQuery, React JS, Redux</p>
+            </div>
+    
+            <div class="tab-detail col s12" id="design">
+              <p class="detail flow-text indigo-text text-darken-4">DESIGN</p>
+              <p>Lately I have been learning about UI UX cause I fell this skills will greatly assist me as a front-end developer.</p>
+              <p>Tools: Figma</p>
+            </div>
+            
+            <div class="tab-detail col s12" id="backend">
+                <p class="detail flow-text indigo-text text-darken-4">BACK-END</p>
+                <p>Being a full-stack web developer is what I aim for when I first decided to learn about web development.</p>
+                <p>Languages: Javascript</p>
+                <p>Tools: Node JS</p>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <!-- <div class="absolute-div-4"></div>
+    <div class="absolute-div-5"></div>
+    <div class="absolute-div-6"></div> -->
+
+    <!-- My Works -->
+    <section class="scrollspy container myworks center-align" id="myworks">
+
+        <h1>My Recent Works</h1>
+        <div class="row">
+            <div class="col sm12 l6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/ikamma-ss.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">IKAMMA FEB UGM</span>
+                        <p>I designed a webpage designated to fully showcase their profile such as the
+                            organization structure and their past projects and events using pure HTML.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="ikammafebugm.com">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col sm12 l6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/peduli-corona-ss.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Peduli Corona</span>
+                        <p>I created the landing page and dashboard for donors and some other pages on this donation
+                            distribution website using React js.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="pedulicorona.site">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="absolute-div-7"></div>
+    <div class="absolute-div-8"></div>
+    <div class="absolute-div-9"></div> -->
+
+    <!-- Contact Me -->
+    <section class="scrollspy center-align contactme container z-depth-3 white" id="contactme">
+        <h1>Reach Me</h1>
+        <form action="">
+            <div class="row">
+                <div class="col s12 m4 input-field">
+                    <i class="material-icons prefix">person</i>
+                    <input type="text" name="" id="name">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col s12 m4 input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" name="" id="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col s12 m4 input-field">
+                    <i class="material-icons prefix">phone</i>
+                    <input type="text" name="" id="phone">
+                    <label for="phone">Phone</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea name="" id="message" class="materialize-textarea"></textarea>
+                    <label for="message">Additional Information</label>
+                </div>
+            </div>
+            <div class="input-field">
+                <button class="btn waves-effect waves-light grey darken-3 text-white">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer grey darken-3 footer">
+        <div class="container">
+            <div class="row center-align">
+                <h5>Always striving to be better everyday!</h5>
+                <h6>Connect</h6>
+                <a href="#" class="social-media-icon tooltip btn-floating btn-small grey darken-4" data-tooltip="DelphicGen">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-media-icon tooltip btn-floating btn-small grey darken-4" data-tooltip="Gennardo Kidam">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-media-icon tooltip btn-floating btn-small grey darken-4" data-tooltip="Gennardo Kidam">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+          <div class="container center-align">
+            &copy; 2020 DelphicGen
+          </div>
+        </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    >
+    </script>
+    <script src="js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

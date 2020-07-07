@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+header {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Navigation */
+.sidenav-link {
+    border-bottom: 2px solid #fff;
+    border-left: 10px solid #fff;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+/* main background */
+.main-bg {
+    position: absolute;
+    background: url('../images/landing-page-1.jpg');
+    background-size: cover;
+    background-position: 40% 0;
+    width: 40%;
+    height: calc(100vh - 64px);
+    z-index: -1;
+    right: 2%;
+}
+
+/* Landing Page */
+.landing-page {
+    padding: 4em;
+}
+
+.landing-page h1 {
+    position: relative;
+    font-family: Merriweather;
+    line-height: 1em;
+}
+
+.landing-page h1::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 4em;
+    top: -30%;
+    left: -3%;
+    border: 2px solid #808080;
+}
+
+.landing-page h2 {
+    font-family: Sacramento;
+    line-height: 1.5em;
+    padding-left: 20%;
+    margin-top: 20px;
+}
+
+.landing-page h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 1.5em;
+    width: 20%;
+    background: #808080;
+    margin-top: 20px;
+}
+
+.block {
+    position: absolute;
+    width: 4em;
+    height: 4em;
+}
+
+.one {
+    left: 4em;
+    bottom: 4em
+}
+.two {
+    left: 0;
+    bottom: 0;
+}
+
+/* .watermark {
+    position: absolute;
+    z-index: -2;
+    font-size: 200px;
+    color: #808080;
+    opacity: .3;
+    bottom: -15%;
+    left: 15%;
+} */
+
+/* About Me */
+.aboutme {
+    padding: 50px 0 150px;
+}
+
+.aboutme h4, .aboutme p {
+    line-height: 2em;
+    padding: 0 5rem;
+}
+
+/* What I Do */
+.whatIdo, .contactme {
+    margin-top: -100px;
+    border-radius: 20px;
+    padding: 50px;
+    border: 1px solid #808080;
+}
+
+.tabs .indicator {
+    background-color: #1a237e;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+background-color: transparent;
+}
+
+.tab-detail {
+    min-height: 220px !important;
+}
+
+.tab-detail p {
+    line-height: 1.5em;
+    padding: 10px 0;
+}
+
+/* My Works */
+.myworks {
+    margin: 50px auto 150px;
+}
+
+.myworks h1 {
+    margin-bottom: 50px;
+}
+
+/* Contact Me */
+.contactme {
+    position: relative;
+    margin-bottom: -100px;
+    z-index: 1;
+}
+
+/* Footer */
+.footer {
+    padding: 150px 0 0;
+}
+
+.footer h5, .footer h6 {
+    line-height: 1.5em;
+}
+
+.social-media-icon {
+    margin: 8px;
+}
+
+/* Absolute div */
+/* .absolute-div-1, 
+.absolute-div-2, 
+.absolute-div-3, 
+.absolute-div-4, 
+.absolute-div-5,
+.absolute-div-6,
+.absolute-div-7,
+.absolute-div-8,
+.absolute-div-9 {
+    position: absolute;
+}
+
+.absolute-div-1 {
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: rgba(0, 206, 209, .3);
+    top: 90%;
+} */
+
+@media screen and (max-width: 900px) {
+    .landing-page h1 {
+        font-size: 3.5rem;
+    }
+
+    .landing-page h2 {
+        font-size: 3rem;
+    }
+    
+    .landing-page h2::before {
+        height: 1.1em;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .landing-page h1 {
+        font-size: 3.2rem;
+    }
+
+    .landing-page h2 {
+        font-size: 2.7rem;
+    }
+
+    .main-bg {
+        width: 45%;
+        right: 0;
+    }
+
+    .contactme {
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-bg {
+        height: calc(100vh - 56px);
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .landing-page {
+        padding: 30vh 4em 0;
+    }
+
+    .landing-page h1 {
+        font-size: 3rem;
+    }
+
+    .landing-page h1::before {
+        width: 45%;
+    }
+
+    .landing-page h2 {
+        font-size: 2.5rem;
+    }
+
+    .landing-page h2::before {
+        height: 1em;
+        margin-top: 15px;
+    }
+
+    .main-bg {
+        width: 50%;
+        background-position: 20% 0;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .main-bg {
+        width: 70%;
+        background-position: 20% 0;
+    }
+
+    .landing-page h1 {
+        font-size: 2.5rem;
+    }
+
+    .landing-page h2 {
+        font-size: 2rem;
+        padding-left: 15%;
+    }
+
+    .aboutme h4, .aboutme p {
+        padding: 0 2rem;
+    }
+
+    .block {
+        width: 3em;
+        height: 3em;
+    }
+
+    .one {
+        left: 3em;
+        bottom: 3em
+    }
+    .two {
+        left: 0;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .landing-page h1::before {
+        width: 70%;
+        height: 5em;
+    }
+}
+
