@@ -12,6 +12,11 @@ header {
 }
 
 /* Navigation */
+nav {
+    position: fixed;
+    z-index: 10;
+}
+
 .sidenav-link {
     border-bottom: 2px solid #fff;
     border-left: 10px solid #fff;
@@ -104,6 +109,7 @@ header {
 .aboutme h4, .aboutme p {
     line-height: 2em;
     padding: 0 5rem;
+    margin: 20px 0;
 }
 
 /* What I Do */
